@@ -1,0 +1,35 @@
+.body{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up{
+    text-align: center;
+}
+
+.down{
+    width: 400px;
+    text-align: center;
+}
+
+.copyright{
+    text-align: left;
+}
+
+.btn{
+    border-radius: 0%;
+}
+
+.btn:hover{
+    background-color: rgb(211, 211, 211);
+}
+.btn_delete{
+    background-color: red;
+    border-radius: 0%;
+}
+.btn_delete:hover{
+    background-color: brown;
+}
