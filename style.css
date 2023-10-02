@@ -1,4 +1,6 @@
 .body{
+    background-color: rgb(50,80,80);
+    color: white;
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -8,19 +10,30 @@
 
 .up{
     text-align: center;
+    min-width: 200px;
+    max-width: 500px;
 }
 
 .down{
+    text-align: left;
     width: 400px;
-    text-align: center;
 }
 
-.copyright{
+.copy{
+    justify-content: left;
     text-align: left;
 }
 
+.checkbox{
+    height: 35px;
+    width: 160px;
+    border: none;
+}
+
 .btn{
-    border-radius: 0%;
+    height: 35px;
+    width: 70px;
+    border: none;
 }
 
 .btn:hover{
@@ -28,8 +41,20 @@
 }
 .btn_delete{
     background-color: red;
+    height: 35px;
+    width: 120px;
     border-radius: 0%;
+    border: none;
 }
 .btn_delete:hover{
     background-color: brown;
+}
+
+.somelabel{
+    width: 200px;
+}
+
+.list_item:nth-child(3){
+    right: 10px;
+
 }

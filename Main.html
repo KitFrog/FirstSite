@@ -3,13 +3,19 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="scripts\task1.js"></script>
+        <!--<script src="scripts\task1.js"></script>/!-->
+        <script src="scripts/task2.js"></script>
+        <script src="scripts/task3.js"></script>
+        <!-- <script src="scripts/task4.js"></script> -->
         <title>Сайтик</title>
         <meta charset="UTF-8">
     </head>
     <body class="body">
         <div class="up">
-            <h1>Список дел</h1>
+            <h1 class="case">Список дел</h1>
+            <p id="txt1">Число Падована: 0</p>
+            <button id="bt1">Нажми на миня</button>
+            <script src="scripts/task4.js"></script>
             <br/>
             <input class="checkbox" type="text" placeholder="Введите новое дело..."/>
             <button class="btn" type="submit">Создать</button>
@@ -17,19 +23,19 @@
         </div>
         <div class="down">
             <ol class="list">
-                <li>
-                    <label><input type="checkbox"/>
+                <li class="list_item">
+                    <label class="somelabel"><input type="checkbox"/>
                     <b>Почесать кошку</b>
                     <button>&#10060;</button>
                     </label>
                 </li>
-                <li>
+                <li class="list_item">
                     <label><input type="checkbox"/>
                     <b>Полить картошку</b>
                     <button>&#10060;</button>
                     </label>
                 </li>
-                <li>
+                <li class="list_item">
                     <label><input type="checkbox"/> 
                     <b>Сложить в лукошко</b>
                     <button>&#10060;</button>
@@ -38,6 +44,8 @@
             </ol>
             <hr/>
         </div>
-        <label>Copyright ©</label>
+        <div class="copy">
+            <label>Copyright ©</label>
+        </div>
     </body>
 </html>
