@@ -135,6 +135,7 @@
 //  * 
 //  * @param {number[]} array 
 //  */
+
 // function maxAndMin(array){
 //   const numberSortFn = (a, b) => {
 //     if (a < b) {
@@ -147,7 +148,6 @@
 //   };
   
 //   array.sort(numberSortFn);
-//   array.reverse();
 //   let min = array[0];
 //   let max = array[array.length-1];
 //   return{min,max, array};
@@ -268,12 +268,12 @@
 
 // Task 8
 
-function intersect(arrA, arrB) {
-  return arrA.filter(item => arrB.includes(item));
-}
+// function intersect(arrA, arrB) {
+//   return arrA.filter(item => arrB.includes(item));
+// }
 
-const arrA = [1, 2, 3, 4, 5];
-const arrB = [3, 4, 5, 6, 7];
+// const arrA = [1, 2, 3, 4, 5];
+// const arrB = [3, 4, 5, 6, 7];
 
-const result = intersect(arrA, arrB);
-console.log(result); // Выведет: [3, 4, 5]
+// const result = intersect(arrA, arrB);
+// console.log(result); // Выведет: [3, 4, 5]
