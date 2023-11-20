@@ -72,3 +72,27 @@ li{
     padding-left: 16px;
 }
 
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select select {
+    appearance: none; /* Убираем стандартные стили для выпадающего списка */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 5px;
+    padding-right: 30px; /* Добавляем место для иконки */
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.custom-select:after {
+    content: '\25BC'; /* Юникод-символ для стрелки вниз */
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}

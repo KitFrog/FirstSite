@@ -229,51 +229,51 @@
 
 // Task 6
 
-// function fibonacci(n){
-//   if(n === 0){
-//     return 0;
-//   }
-//   if(n === 1 || n === 2) {
-//       return 1;
-//     }
+function fibonacci(n){
+  if(n === 0){
+    return 0;
+  }
+  if(n === 1 || n === 2) {
+      return 1;
+    }
         
 
-//   return (fibonacci(n-1) + fibonacci(n-2));
-// }
+  return (fibonacci(n-1) + fibonacci(n-2));
+}
 
-// async function counterFibonacci(n) {
-//   for(let i = 1; i < n+1; i++) {
-//     console.log(fibonacci(i));
-//     await new Promise(resolve => setTimeout(resolve, 1000));
-//   }
-// }
+async function counterFibonacci(n) {
+  for(let i = 1; i < n+1; i++) {
+    console.log(fibonacci(i));
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+}
 
-// counterFibonacci(10);
+counterFibonacci(10);
 
 
 // Task 7
 
-// function delay(N) {
-//   return new Promise(resolve => {
-//     setTimeout(() => {
-//       resolve();
-//     }, N * 1000);
-//   });
-// }
+function delay(N) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, N * 1000);
+  });
+}
 
-// delay(5).then(() => {
-//   console.log('Прошло 5 секунд');
-// });
+delay(5).then(() => {
+  console.log('Прошло 5 секунд');
+});
 
 
 // Task 8
 
-// function intersect(arrA, arrB) {
-//   return arrA.filter(item => arrB.includes(item));
-// }
+function intersect(arrA, arrB) {
+  return arrA.filter(item => arrB.includes(item));
+}
 
-// const arrA = [1, 2, 3, 4, 5];
-// const arrB = [3, 4, 5, 6, 7];
+const arrA = [1, 2, 3, 4, 5];
+const arrB = [3, 4, 5, 6, 7];
 
-// const result = intersect(arrA, arrB);
-// console.log(result); // Выведет: [3, 4, 5]
+const result = intersect(arrA, arrB);
+console.log(result); // Выведет: [3, 4, 5]

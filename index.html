@@ -9,7 +9,7 @@
     <!-- <script src="scripts/task3.js"></script> -->
     <!-- <script src="scripts/task4.js"></script> -->
     <script src="scripts/task5.js"></script>
-    <script src="scripts/task6.js"></script>
+    <script src="scripts/todo-manager.js"></script>
     <title>Сайтик</title>
     <meta charset="UTF-8">
 </head>
@@ -20,12 +20,12 @@
         <br />
         <div id="inUp">
             <input class="inputBox" type="text" placeholder="Введите новое дело..." />
-            <button class="btn" type="submit">Создать</button>
+            <button class="btn" >Создать</button>
             <button class="btn_delete">Очистить всё</button>
         </div>
     </div>
     <div class="down">
-        <ol class="list">
+        <ol class="list" id="taskList">
             <li>
                 <label>
                     <input class="checkbox" type="checkbox" />
@@ -52,6 +52,17 @@
     </div>
     <div class="copy">
         <label>Copyright ©</label>
+    </div>
+    <div>
+        <label id="completed-label" style="margin-right: 10px;">Выполнено (*)</label>
+        <label id="incomplete-label" style="margin-right: 10px;">Не Выполнено (*)</label>
+        <div class="custom-select">
+            <label id="total-label">Все (*)</label>
+            <select id="sorts" name="fruits" onchange="showSelectedFruit()">
+                <option value="first-second">А-Я</option>
+                <option value="second-firsts">Я-А</option>
+            </select>
+        </div>
     </div>
 </body>
 
