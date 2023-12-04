@@ -1,0 +1,74 @@
+.body{
+    background-color: rgb(50,80,80);
+    color: white;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up{
+    text-align: center;
+    min-width: 200px;
+}
+
+.down{
+    text-align: left;
+    width: 400px;
+}
+
+.copy{
+    justify-content: left;
+    text-align: left;
+}
+
+.inputBox{
+    height: 35px;
+    width: 350px;
+    border: none;
+    padding-inline: 0px;
+    padding-block: 0px;
+    padding: 0;
+}
+
+.btn{
+    height: 35px;
+    width: 90px;
+    border: none;
+    padding-inline: 0px;
+    padding-block: 0px;
+    padding: 0;
+    background-color: rgb(199, 199, 199);
+}
+
+.btn:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.btn_delete{
+    background-color: red;
+    height: 35px;
+    width: 120px;
+    border-radius: 0%;
+    border: none;
+    padding-inline: 0px;
+    padding-block: 0px;
+    padding: 0;
+}
+
+.btn_delete:hover{
+    background-color: brown;
+}
+
+
+#inUp{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
